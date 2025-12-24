@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="build/icons/icon.png" alt="Aces Logo" width="128" height="128">
-</p>
-
 <h1 align="center">Aces</h1>
 
 <p align="center">
