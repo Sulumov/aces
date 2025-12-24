@@ -1,0 +1,30 @@
+/* Main CSS Entry Point */
+/* This file imports all modular styles */
+
+/* Base */
+@import './base/variables.css';
+@import './base/reset.css';
+
+/* Layout */
+@import './layout/app.css';
+@import './layout/header.css';
+
+/* Shared */
+@import './shared/cards.css';
+@import './shared/buttons.css';
+@import './shared/forms.css';
+@import './shared/status.css';
+@import './shared/badges.css';
+@import './shared/errors.css';
+
+/* Components */
+@import './components/add-stream.css';
+@import './components/player.css';
+@import './components/stats.css';
+@import './components/dialog.css';
+@import './components/settings.css';
+@import './components/history.css';
+@import './components/bookmarks.css';
+
+/* Utilities */
+@import './utilities/animations.css';

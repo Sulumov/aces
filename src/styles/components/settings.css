@@ -1,0 +1,113 @@
+/* Settings Dialog */
+.settings-dialog {
+  min-width: 380px;
+}
+
+.settings-content {
+  margin-bottom: 20px;
+}
+
+.settings-section {
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  padding: 4px;
+  border: 1px solid var(--border-muted);
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 12px;
+  border-radius: var(--radius-sm);
+}
+
+.settings-row:hover {
+  background: var(--bg-tertiary);
+}
+
+.settings-label {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.settings-label-title {
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.settings-label-description {
+  font-size: 11px;
+  color: var(--text-muted);
+}
+
+.settings-select {
+  padding: 8px 12px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  font-size: 13px;
+  cursor: pointer;
+  min-width: 120px;
+  outline: none;
+  transition: border-color 0.15s;
+}
+
+.settings-select:hover,
+.settings-select:focus {
+  border-color: var(--accent-blue);
+}
+
+/* Settings Page */
+.settings-page {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: var(--bg-primary);
+}
+
+.settings-content-page {
+  flex: 1;
+  padding: 24px;
+  overflow-y: auto;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.settings-section-block {
+  margin-bottom: 24px;
+}
+
+.settings-section-block h2 {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Settings Button */
+.settings-btn {
+  padding: 8px 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.settings-btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--accent-blue);
+  color: var(--text-primary);
+}

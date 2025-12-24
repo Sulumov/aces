@@ -1,0 +1,147 @@
+/* Dialog - Compact */
+.dialog-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(4px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.dialog {
+  background: var(--bg-secondary);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  max-width: 420px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  border: 1px solid var(--border);
+  box-shadow: 0 16px 48px var(--shadow);
+  animation: fadeIn 0.15s ease;
+}
+
+.dialog h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.dialog p {
+  color: var(--text-secondary);
+  font-size: 13px;
+  margin-bottom: 14px;
+}
+
+.instructions {
+  background: var(--bg-primary);
+  border-radius: var(--radius-md);
+  padding: 16px;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-muted);
+}
+
+.instructions p {
+  margin-bottom: 6px;
+}
+
+.instructions ol {
+  padding-left: 18px;
+}
+
+.instructions li {
+  margin-bottom: 12px;
+}
+
+.instructions li p {
+  margin-bottom: 6px;
+}
+
+.instructions code {
+  display: block;
+  background: var(--bg-tertiary);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 11px;
+  color: var(--text-primary);
+  word-break: break-all;
+  font-family: 'SF Mono', Monaco, monospace;
+}
+
+.copyable-command {
+  display: flex;
+  align-items: stretch;
+  gap: 0;
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+}
+
+.copyable-command code {
+  flex: 1;
+  border-radius: 0;
+  background: transparent;
+}
+
+.copyable-command .copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 10px;
+  background: transparent;
+  border: none;
+  border-left: 1px solid var(--border-muted);
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: all 0.15s;
+  flex-shrink: 0;
+}
+
+.copyable-command .copy-btn:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.copyable-command .copy-btn.copied {
+  color: var(--success);
+}
+
+.dialog-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.dialog-actions button {
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.dialog-actions button.primary {
+  background: var(--accent);
+  color: white;
+}
+
+.dialog-actions button.primary:hover {
+  background: var(--accent-hover);
+}
+
+.dialog-actions button.secondary {
+  background: var(--bg-tertiary);
+  color: var(--text-primary);
+  border: 1px solid var(--border);
+}
+
+.dialog-actions button.secondary:hover {
+  background: var(--bg-hover);
+}

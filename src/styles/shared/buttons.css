@@ -1,0 +1,58 @@
+/* Button Base */
+button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Play Button */
+.play-btn {
+  flex: 1;
+  padding: 8px 12px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.play-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+/* Engine Control Buttons */
+.start-engine-btn {
+  padding: 8px 16px;
+  background: var(--accent);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.start-engine-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.stop-engine-btn {
+  padding: 8px 16px;
+  background: var(--bg-tertiary);
+  border: 1px solid var(--border);
+  color: var(--text-secondary);
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.stop-engine-btn:hover:not(:disabled) {
+  background: var(--bg-hover);
+  border-color: var(--accent-blue);
+  color: var(--text-primary);
+}

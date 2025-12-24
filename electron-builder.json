@@ -1,0 +1,70 @@
+{
+  "appId": "com.aces.app",
+  "productName": "Aces",
+  "directories": {
+    "output": "release"
+  },
+  "files": [
+    "dist",
+    "dist-electron"
+  ],
+  "extraResources": [
+    {
+      "from": "engine",
+      "to": "engine",
+      "filter": ["**/*"]
+    }
+  ],
+  "win": {
+    "target": ["nsis"],
+    "icon": "build/icon.ico",
+    "protocols": {
+      "name": "Acestream URL",
+      "schemes": ["acestream"]
+    },
+    "extraResources": [
+      {
+        "from": "engine/win",
+        "to": "engine",
+        "filter": ["**/*"]
+      }
+    ]
+  },
+  "linux": {
+    "target": ["AppImage", "deb"],
+    "icon": "build/icon.png",
+    "category": "Video",
+    "mimeTypes": ["x-scheme-handler/acestream"],
+    "extraResources": [
+      {
+        "from": "engine/linux",
+        "to": "engine",
+        "filter": ["**/*"]
+      }
+    ]
+  },
+  "mac": {
+    "target": ["dmg"],
+    "icon": "build/icon.icns",
+    "category": "public.app-category.video",
+    "extendInfo": {
+      "CFBundleURLTypes": [
+        {
+          "CFBundleURLName": "Acestream URL",
+          "CFBundleURLSchemes": ["acestream"]
+        }
+      ]
+    },
+    "extraResources": [
+      {
+        "from": "engine/win",
+        "to": "engine",
+        "filter": ["**/*"]
+      }
+    ]
+  },
+  "nsis": {
+    "oneClick": false,
+    "allowToChangeInstallationDirectory": true
+  }
+}

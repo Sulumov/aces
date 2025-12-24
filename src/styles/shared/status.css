@@ -1,0 +1,85 @@
+/* Status Indicator */
+.status-indicator {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 6px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.status-dot.running {
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+
+.status-dot.stopped {
+  background: var(--text-muted);
+}
+
+.status-text {
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.version {
+  font-size: 11px;
+  color: var(--text-muted);
+  margin-bottom: 10px;
+}
+
+/* Engine Status Inline (Settings Page) */
+.engine-status-inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.engine-status-inline .status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.engine-status-inline .status-dot.running {
+  background: var(--accent);
+  box-shadow: 0 0 6px var(--accent);
+}
+
+.engine-status-inline .status-dot.stopped {
+  background: var(--text-muted);
+}
+
+.engine-status-inline button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 12px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.engine-status-inline .start-engine-btn {
+  background: var(--accent);
+  color: white;
+}
+
+.engine-status-inline .start-engine-btn:hover:not(:disabled) {
+  background: var(--accent-hover);
+}
+
+.engine-status-inline .stop-engine-btn {
+  background: var(--bg-primary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border);
+}
+
+.engine-status-inline .stop-engine-btn:hover:not(:disabled) {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}

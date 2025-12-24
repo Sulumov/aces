@@ -1,0 +1,63 @@
+/* Stats - Horizontal Bottom Bar */
+.stats {
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  padding: 4px 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 8px;
+}
+
+.stats-toggle {
+  background: transparent;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  font-size: 10px;
+  padding: 4px 6px;
+  border-radius: var(--radius-sm);
+  transition: all 0.15s;
+  margin-left: 8px;
+}
+
+.stats-toggle:hover {
+  background: var(--bg-hover);
+  color: var(--text-primary);
+}
+
+.stats h3 {
+  display: none;
+}
+
+.stats-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  align-items: center;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  background: transparent;
+  border-radius: 0;
+}
+
+.stat-label {
+  font-size: 9px;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.stat-value {
+  font-size: 9px;
+  font-weight: 500;
+  font-family: 'SF Mono', Monaco, monospace;
+  white-space: nowrap;
+  color: var(--text-secondary);
+}
