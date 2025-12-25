@@ -5,6 +5,7 @@
 import { useState, useEffect, useRef, useCallback } from 'react'
 import { useTranslation } from 'react-i18next'
 import '../styles/components/setup-wizard.css'
+import logo from '/logo.png'
 
 interface InstallProgress {
   step: 'checking' | 'rosetta' | 'homebrew' | 'wine' | 'complete' | 'error'
@@ -214,7 +215,7 @@ export default function SetupWizard({ onComplete, onSkip }: SetupWizardProps) {
         {/* App branding */}
         <div className="setup-wizard-branding">
           <img 
-            src="/logo.png" 
+            src={logo} 
             alt="Aces" 
             className="setup-wizard-logo"
           />

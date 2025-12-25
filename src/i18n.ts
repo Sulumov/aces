@@ -8,10 +8,16 @@ import LanguageDetector from 'i18next-browser-languagedetector'
 
 import en from './locales/en.json'
 import ru from './locales/ru.json'
+import uk from './locales/uk.json'
+import es from './locales/es.json'
+import pt from './locales/pt.json'
 
 const resources = {
   en: { translation: en },
-  ru: { translation: ru }
+  ru: { translation: ru },
+  uk: { translation: uk },
+  es: { translation: es },
+  pt: { translation: pt }
 }
 
 i18n
@@ -20,7 +26,7 @@ i18n
   .init({
     resources,
     fallbackLng: 'en',
-    supportedLngs: ['en', 'ru'],
+    supportedLngs: ['en', 'ru', 'uk', 'es', 'pt'],
     
     detection: {
       // Language detection order

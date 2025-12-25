@@ -36,7 +36,7 @@
 - 📊 **Real-time Statistics** — View peers, download/upload speed, and buffering status
 - 📚 **Watch History** — Automatic history with date grouping
 - ⭐ **Bookmarks** — Save favorite streams with drag-and-drop sorting
-- 🌍 **Localization** — English and Russian interface
+- 🌍 **Localization** — English, Russian, Ukrainian, Spanish, and Portuguese interface
 - 🖥️ **Cross-platform** — Works on Windows, Linux, and macOS (via Wine)
 
 ### 📋 Requirements
@@ -140,7 +140,7 @@ Uses Windows version of Engine via Wine. Follow Windows instructions and place f
 - 📊 **Статистика в реальном времени** — Просмотр пиров, скорости загрузки/отдачи и статуса буферизации
 - 📚 **История просмотров** — Автоматическое сохранение с группировкой по датам
 - ⭐ **Закладки** — Сохранение любимых стримов с drag-and-drop сортировкой
-- 🌍 **Локализация** — Английский и русский интерфейс
+- 🌍 **Локализация** — Английский, русский, украинский, испанский и португальский интерфейс
 - 🖥️ **Кроссплатформенность** — Работает на Windows, Linux и macOS (через Wine)
 
 ### 📋 Требования

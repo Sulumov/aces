@@ -170,6 +170,9 @@ function SettingsPage({
               >
                 <option value="en">{t('settings.languages.en')}</option>
                 <option value="ru">{t('settings.languages.ru')}</option>
+                <option value="uk">{t('settings.languages.uk')}</option>
+                <option value="es">{t('settings.languages.es')}</option>
+                <option value="pt">{t('settings.languages.pt')}</option>
               </select>
             </div>
             
